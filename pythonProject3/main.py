@@ -63,7 +63,7 @@ for r in router:
         cli.send("conf t \n")
         with open('r2.conf1.txt','r') as jj:
             out1=jj.readlines()
-        
+
     else:
         cli = ssh.invoke_shell()
         cli.send('en \n')
@@ -79,3 +79,4 @@ for r in router:
         output3 = cli.recv(99999).decode()
         with open(str(date.date()) + 'r3', 'w') as v3:
             v3.write(output3)
+print("the change committed")
