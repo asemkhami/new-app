@@ -80,3 +80,4 @@ for r in router:
         with open(str(date.date()) + 'r3', 'w') as v3:
             v3.write(output3)
 print("the change committed")
+print("new test cases")
