@@ -1,0 +1,6 @@
+router bgp {{asm.bgp_as}}
+neighbor {{asm.neighbor_ip}} remote-as {{asm.remote_as}}
+{%if asm.neighbor_ip2%}
+router bgp {{asm.bgp_as}}
+neighbor {{asm.neighbor_ip2}} remote-as {{asm.remote_as2}}
+{%endif%}

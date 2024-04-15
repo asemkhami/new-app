@@ -1,0 +1,2 @@
+router bgp 300
+neighbor 11.0.0.2 remote-as 200

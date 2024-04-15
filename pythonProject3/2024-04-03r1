@@ -1,0 +1,15 @@
+
+eve>en 
+eve#terminal length 0 
+eve#conf t 
+Enter configuration commands, one per line.  End with CNTL/Z.
+eve(config)#router bgp 100
+eve(config-router)#neighbor 10.0.0.2 remote-as 200
+eve(config-router)#end 
+eve#show bgp summary 
+BGP router identifier 192.168.110.142, local AS number 100
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.0.0.2        4          200       0       0        1    0    0 never    Active
+eve#

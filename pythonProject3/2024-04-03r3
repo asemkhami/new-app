@@ -1,0 +1,15 @@
+
+eve3>en 
+eve3#terminal length 0 
+eve3#conf t 
+Enter configuration commands, one per line.  End with CNTL/Z.
+eve3(config)#router bgp 300
+eve3(config-router)#neighbor 11.0.0.2 remote-as 200
+eve3(config-router)#end 
+eve3#show bgp summary 
+BGP router identifier 192.168.110.144, local AS number 300
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+11.0.0.2        4          200      65      67        1    0    0 00:57:16        0
+eve3#

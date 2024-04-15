@@ -1,0 +1,5 @@
+router bgp {}
+bgp router-id{}
+neighbor{} remote-as{}
+neighbor{} update-source {}
+neighbor {} ebgb-mulihub{}
